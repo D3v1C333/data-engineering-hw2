@@ -26,5 +26,5 @@ with open("./output/3_products_result.msgpack", "wb") as msgpack_file:
     packed_data = msgpack.packb(products_result)
     msgpack_file.write(packed_data)
 
-print(f"Размер оригинального файла: {os.path.getsize('./output/3_products_result.json')}")
-print(f"Размер сжатого файла: {os.path.getsize('./output/3_products_result.msgpack')}")
+print(f"Размер json: {os.path.getsize('./output/3_products_result.json')}")
+print(f"Размер msgpack: {os.path.getsize('./output/3_products_result.msgpack')}")
